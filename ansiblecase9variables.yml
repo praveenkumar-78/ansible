@@ -1,0 +1,11 @@
+- - -
+  - name: showing variables
+     host: all
+      vars:
+        os: "linux"
+        cloud: "aws"
+         tools: "devolps"
+          tasks:
+          - name: debug massage
+            debug:
+              msg: "i love linux {{prav}}"

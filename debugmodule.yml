@@ -1,0 +1,6 @@
+- - -
+   - name: usage if debug module
+     hosts: all
+       task:
+         - name: deplay bellow massage
+           debug: msg="welcome to varains"

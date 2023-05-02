@@ -1,0 +1,7 @@
+- - -
+  - name: usage of debuge mmodule
+    hosts: all
+     tasks:
+     - name: printing
+        debuge:
+            msg: "the hostname is : {{inventory_hostname}}

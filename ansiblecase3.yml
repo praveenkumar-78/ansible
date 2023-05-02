@@ -1,0 +1,9 @@
+- - -
+  - name: multiple commands on singel module
+  - hosts: all
+     tasks:
+     - debug: adding the multiple line on single debug
+          msg:
+            - "welcome to varains praveen"
+            - "welcome to varains subbu"
+            - "welcome to varaons devil"

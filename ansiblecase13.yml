@@ -1,0 +1,9 @@
+- - -
+  - name:
+    hosts:
+     tasks:
+         - name: server kernel
+           command: uname -a
+             reigster: kernel
+              - debug: var=kernel . stdout
+                      {variables}     {parameters}

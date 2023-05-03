@@ -1,0 +1,10 @@
+- - -
+  - name: " this is service start"
+    hosts: all
+     tasks:
+      - name: copy a file
+        copy: src=/etc/ssh/sshd_config dest=/etc/ssh/
+         notify: restart shhd service
+         handlers:
+              - name: restart sshd service
+               service: name=sshd state=restarted

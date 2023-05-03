@@ -1,0 +1,19 @@
+- - -
+  - name: start multiple services
+    hosts:
+     tasks:
+      - name: start sshd service
+       service: name=sssjd state= started enabled=yes
+         tags: sshd
+        - name: start httpd sevice
+         service: name=httpd state=started enabled=yes
+             tags:
+         - name: start vstfpd service
+          service: name=vstfpd state=started ensbled=yes
+              tags: praveen
+               - name: start samba service
+                service: name=smb state=started enabled=yes
+                   tags: divya
+                   - name: start nfs service 
+                  service: name:nfs state=srarted enabled=yes
+            

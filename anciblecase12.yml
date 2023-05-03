@@ -1,0 +1,10 @@
+- - -
+  - name: checking kernel version
+    hosts: all
+     tasks:
+       - name: server kernel
+         command: uname -a
+          register: kernel/pandi
+            - debug: var=kernel/pandi
+            - debug: msg="kernel/pandi"
+             - debug: msg= my kernel is {{pandi}}
